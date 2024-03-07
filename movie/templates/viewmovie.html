@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<img src="{{movie.img.url}}" alt="img" height="300px" width="300px">
+<h1>{{ movie.name }}</h1>
+<p>Desc:{{ movie.desc }}</p>
+<p>Year:{{ movie.year }}</p>
+
+<a href="{% url 'app:movieupdate' movie.id %}" class="btn btn-danger">Update</a>
+<a href="{% url 'app:deletemovie' movie.id %}" class="btn btn-danger">Delete</a>
+
+{% endblock %}

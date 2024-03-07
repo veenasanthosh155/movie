@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<center><h3 class="mt-4">Movie Titles</h3></center>
+<br>
+<div class="container">
+  <div class="row row-cols-4">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'images/pic1.jpg'%}" style="height:300px; width:100%;" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Jab We Met</h5>
+         <p class="card-text"> Indian Hindi-language romantic comedy</p>
+         <a href="{% url 'app:viewmovie' %}" class="btn btn-primary">View</a>
+         </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'images/pic2.jpg'%}" style="height:300px; width:100%;" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Yeh Jawani Hain Deewani</h5>
+         <p class="card-text">Indian Hindi-language coming of age romantic comedy</p>
+         <a href="{% url 'app:viewmovie' %}" class="btn btn-primary">View</a>
+         </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'images/pic3.jpg'%}" style="height:300px; width:100%;" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Bangalore Days</h5>
+         <p class="card-text">Indian Malayalam-language coming of age romantic comedy-drama </p>
+         <a href="{% url 'app:viewmovie' %}" class="btn btn-primary">View</a>
+         </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'images/pic4.jpg'%}" style="height:300px; width:100%;" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">CHarlie</h5>
+         <p class="card-text">Indian Malayalam-language adventure drama film</p>
+         <a href="{% url 'app:viewmovie' %}" class="btn btn-primary">View</a>
+         </div>
+       </div>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row row-cols-4 ">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'images/pic5.jpg'%}" style="height:300px; width:100%;" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Godha</h5>
+         <p class="card-text">Indian Malayalam-language sports comedy film</p>
+         <a href="{% url 'app:viewmovie' %}" class="btn btn-primary">View</a>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
